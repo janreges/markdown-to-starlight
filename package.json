@@ -4,7 +4,7 @@
   "description": "A handy helper that converts README.md (typically from your GitHub) into a content structure for the Astro Starlight tool.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "gen": "ts-node src/generator/index.ts"
   },
   "repository": {
     "type": "git",
@@ -24,8 +24,11 @@
   },
   "homepage": "https://github.com/janreges/markdown-to-starlight#readme",
   "dependencies": {
+    "@types/node": "^20.9.0",
     "axios": "^1.6.1",
     "markdown-it": "^13.0.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.2.2",
     "yargs": "^17.7.2"
   }
 }
