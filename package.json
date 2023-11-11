@@ -1,0 +1,31 @@
+{
+  "name": "markdown-to-starlight",
+  "version": "1.0.0",
+  "description": "A handy helper that converts README.md (typically from your GitHub) into a content structure for the Astro Starlight tool.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/janreges/markdown-to-starlight.git"
+  },
+  "keywords": [
+    "markdown",
+    "astro",
+    "starlight",
+    "converter",
+    "github"
+  ],
+  "author": "Ján Regeš <jan.reges@siteone.cz>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/janreges/markdown-to-starlight/issues"
+  },
+  "homepage": "https://github.com/janreges/markdown-to-starlight#readme",
+  "dependencies": {
+    "axios": "^1.6.1",
+    "markdown-it": "^13.0.2",
+    "yargs": "^17.7.2"
+  }
+}
