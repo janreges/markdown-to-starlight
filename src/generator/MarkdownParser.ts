@@ -51,7 +51,7 @@ export class MarkdownParser {
 
         // if Section has directContent, set this content as first SubSection with name of Section
         sections.forEach(section => {
-            if (section.directContent) {
+            if (section.directContent && section.directContent.trim().length > 0) {
                 const subSection: SubSection = {name: section.name, directContent: section.directContent, content: []};
                 section.directContent = '';
                 section.content.unshift(subSection);
