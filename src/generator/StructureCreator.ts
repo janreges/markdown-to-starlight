@@ -61,7 +61,7 @@ export class StructureCreator {
 
                 // take description only if it starts with capital letter - it is probably a sentence
                 if (subSection.directContent && subSection.directContent.trim().match(/^[A-Z]/)) {
-                    let description = subSection.directContent.replace(/\s+/g, ' ').replace(/[*#_:"'`-]+/g, ' ').replace(/\s+/g, ' ').trim();
+                    let description = subSection.directContent.replace(/\s+/g, ' ').replace(/[*#_:"'`()-]+/g, ' ').replace(/\s+/g, ' ').trim();
                     if (description.length > 250) {
                         content += `description: ${description.substring(0, 250)}...\n`;
                     } else {
