@@ -2,6 +2,8 @@
 
 A handy helper that converts single-file Markdown (typically README.md from your GitHub) into a content structure for the [Astro Starlight](https://starlight.astro.build/) tool.
 
+![Markdown-to-Starlight converter](docs/markdown-to-starlight.gif)
+
 ## Requirements
 
 The generator assumes the following Markdown file structure:
